@@ -58,7 +58,7 @@ gulp.task("build",["scss","scripts","copy-html","data","scssAll","images"],funct
     console.log("项目创建成功");
 })
 
-//建立监听
+//建立监听 批量监听文件
 gulp.task("watch",function(){
     gulp.watch("stylesheet/index.scss",["scss"]);
     gulp.watch("stylesheet/*.scss",["scssAll"]);
